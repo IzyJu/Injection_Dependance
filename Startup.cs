@@ -19,7 +19,6 @@ namespace WebApplication3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<ISalaryCalculator, MonthlySalaryCalculator>();
             services.AddScoped<ISalaryCalculator, QuaterSalaryCalculator>();
         }
 
